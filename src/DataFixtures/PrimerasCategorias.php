@@ -11,7 +11,7 @@ class PrimerasCategorias extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        $categorias = ["Programacion", "Cocina", "Ajedrez", "Juegos"];
+        $categorias = ["Programacion", "Cocina", "Ajedrez", "Juegos", "Deportes", "Tapeo"];
 
         forEach($categorias as $cat_nombre) {
             $cat = new Categoria();
@@ -20,5 +20,7 @@ class PrimerasCategorias extends Fixture
         }
 
         $manager->flush();
+
+
     }
 }
