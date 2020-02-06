@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
+</head>
+<body>
+        <header>
+            <img src="" alt="logo">
+            <h1>Foro</h1>
+        </header>
+
+        {% block navegacion %}
+
+        {% endblock %}
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
-    </body>
+
+        <footer>
+            <p>Copyright</p>
+            <a href=""><img src="" alt=""></a>
+        </footer>
+</body>
 </html>
+
+
+

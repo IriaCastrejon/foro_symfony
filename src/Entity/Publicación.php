@@ -39,7 +39,7 @@ class Publicación
     private $imagen;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Categoria", inversedBy="publicaciNs")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Categoria", inversedBy="publicaciNs", fetch="EAGER")
      * @ORM\JoinColumn(nullable=false)
      */
     private $categoria;
